@@ -2,6 +2,13 @@
 //|    Activation Functions                                          |
 //+------------------------------------------------------------------+
 
+
+//+------------------------------------------------------------------+
+//|	All the functions are designed to receive a matrix as its
+//| input. The output also is a matrix. The operations are 
+//| point-by-point.                                      
+//+------------------------------------------------------------------+
+
 matrix Sig(matrix &X)
 {
 matrix M;
@@ -35,6 +42,10 @@ for(int i=0;i<M.Rows();i++)
 return M;     
 }
 
+//+------------------------------------------------------------------+
+//|    Derivatives of the Functions                                  |
+//+------------------------------------------------------------------+
+
 matrix dSig(matrix &X)
 {
 matrix M;
@@ -59,6 +70,7 @@ for(int i=0;i<M.Rows();i++)
 
 return M;  
 }
+
 matrix dReLU(matrix &X)
 {
 matrix M;
